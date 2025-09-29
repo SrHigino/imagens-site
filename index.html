@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galeria de Imagens</title>
+<style>
+  body{margin:0;padding:20px;font-family:Arial, sans-serif;background:transparent}
+  h1{text-align:center;color:#333}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+  img{display:block;width:100%;height:auto;border-radius:8px}
+</style>
+</head>
+<body>
+  <h1>Minha Galeria</h1>
+  <div class="gallery">
+
+    <picture>
+      <source srcset="imagens/banner1.webp" type="image/webp">
+      <img src="imagens/banner1.jpg" alt="Banner 1" width="1200" height="400" loading="lazy">
+    </picture>
+
+    <picture>
+      <source srcset="imagens/produto1.webp" type="image/webp">
+      <img src="imagens/produto1.jpg" alt="Produto 1" width="800" height="800" loading="lazy">
+    </picture>
+
+    <picture>
+      <source srcset="imagens/produto2.webp" type="image/webp">
+      <img src="imagens/produto2.jpg" alt="Produto 2" width="800" height="600" loading="lazy">
+    </picture>
+
+  </div>
+</body>
+</html>
